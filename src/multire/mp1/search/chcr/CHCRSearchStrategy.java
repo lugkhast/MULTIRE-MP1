@@ -71,12 +71,12 @@ public class CHCRSearchStrategy implements SearchStrategy {
         int bin, rgb;
         int cenlimitHeight, cenlimitWidth;
         
-        cenlimitHeight = (int) Math.ceil(image.getHeight()/.125);
-        cenlimitWidth = (int) Math.ceil(image.getWidth()/.125);
         Arrays.fill(colorBinsCenter, 0);
         Arrays.fill(colorBinsNonCenter, 0);
         preppedImage.setImageFile(imageFile);
         preppedImage.setImage(image);
+        cenlimitHeight = (int) Math.ceil(image.getHeight()/.125);
+        cenlimitWidth = (int) Math.ceil(image.getWidth()/.125);
 
         for (int i = 0; i < image.getWidth(); i++) {
             for (int j = 0; j < image.getHeight(); j++) {
