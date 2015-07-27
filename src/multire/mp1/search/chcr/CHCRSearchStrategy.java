@@ -44,7 +44,9 @@ public class CHCRSearchStrategy implements SearchStrategy {
             );
         }
         
-        return totalDifferenceCenter;
+        totalDifference = totalDifferenceCenter + totalDifferenceNonCenter;
+        
+        return totalDifference;
     }
 
     private int getBinFromRGB(int rgb) {
