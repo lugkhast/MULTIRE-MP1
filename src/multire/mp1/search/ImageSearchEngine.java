@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import multire.mp1.search.ch.CHSearchStrategy;
+import multire.mp1.search.chcr.CHCRSearchStrategy;
 import multire.mp1.search.hrcc.HRCCSearchStrategy;
 
 /**
@@ -136,7 +137,8 @@ public class ImageSearchEngine {
         // Instantiate implemented SearchStrategies here!
         return new SearchStrategy[] {
             new CHSearchStrategy(),
-            new HRCCSearchStrategy()
+            new HRCCSearchStrategy(),
+            new CHCRSearchStrategy()
         };
     }
 
